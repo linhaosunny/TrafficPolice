@@ -1,16 +1,15 @@
 Pod::Spec.new do |s|
 
   s.name         = "TrafficPolice"
-  s.version      = "1.1"
+  s.version      = "3.0"
   s.summary      = "A Swifty wrapper for ifaddrs.h"
-  s.homepage     = "https://github.com/anotheren/TrafficPolice"
+  s.homepage     = "https://github.com/linhaosunny/TrafficPolice"
   s.license      = { :type => "MIT" }
-  s.author       = { "liudong" => "liudong.edward@qq.com" }
+  s.author       = { "leeshaxin" => "leeshaxin@foxmail.com" }
   s.requires_arc = true
-  s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://github.com/anotheren/TrafficPolice.git",
+  s.ios.deployment_target = "13.0"
+  s.source       = { :git => "https://github.com/linhaosunny/TrafficPolice.git",
                      :tag => s.version }
   s.source_files = "Source/*.swift"
-  s.dependency 'SwiftTimer', '~> 2.0'
 
 end

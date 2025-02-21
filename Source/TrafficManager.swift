@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftTimer
 
 public class TrafficManager {
     

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854E55D32D68AB5300542361 /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854E55D22D68AB4700542361 /* SwiftTimer.swift */; };
 		A04343051DDF29D0000C24EB /* Ex+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343041DDF29D0000C24EB /* Ex+Double.swift */; };
 		A04343071DDF3452000C24EB /* TrafficSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343061DDF3452000C24EB /* TrafficSummary.swift */; };
 		A04343091DDF3490000C24EB /* TrafficStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04343081DDF3490000C24EB /* TrafficStatus.swift */; };
-		A0B1A4491F110A3C00677CDB /* SwiftTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B1A4481F110A3C00677CDB /* SwiftTimer.framework */; };
 		A0C578851DDEF12C005E6F85 /* TrafficPolice.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C578831DDEF12C005E6F85 /* TrafficPolice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0C578921DDEF566005E6F85 /* Ex+UInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788C1DDEF566005E6F85 /* Ex+UInt64.swift */; };
 		A0C578931DDEF566005E6F85 /* TrafficCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C5788D1DDEF566005E6F85 /* TrafficCounter.swift */; };
@@ -21,10 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		854E55D22D68AB4700542361 /* SwiftTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTimer.swift; sourceTree = "<group>"; };
 		A04343041DDF29D0000C24EB /* Ex+Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Ex+Double.swift"; path = "Source/Ex+Double.swift"; sourceTree = "<group>"; };
 		A04343061DDF3452000C24EB /* TrafficSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficSummary.swift; path = Source/TrafficSummary.swift; sourceTree = "<group>"; };
 		A04343081DDF3490000C24EB /* TrafficStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrafficStatus.swift; path = Source/TrafficStatus.swift; sourceTree = "<group>"; };
-		A0B1A4481F110A3C00677CDB /* SwiftTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTimer.framework; path = Carthage/Build/iOS/SwiftTimer.framework; sourceTree = "<group>"; };
 		A0B1A44A1F110A7300677CDB /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A0C578801DDEF12C005E6F85 /* TrafficPolice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TrafficPolice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C578831DDEF12C005E6F85 /* TrafficPolice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrafficPolice.h; sourceTree = "<group>"; };
@@ -43,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0B1A4491F110A3C00677CDB /* SwiftTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +52,6 @@
 		A0B1A4471F110A3C00677CDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0B1A4481F110A3C00677CDB /* SwiftTimer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,6 +88,7 @@
 		A0C5788B1DDEF54D005E6F85 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				854E55D22D68AB4700542361 /* SwiftTimer.swift */,
 				A0C5788D1DDEF566005E6F85 /* TrafficCounter.swift */,
 				A0C5788F1DDEF566005E6F85 /* TrafficManager.swift */,
 				A0C5788E1DDEF566005E6F85 /* TrafficData.swift */,
@@ -156,6 +155,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = A0C578761DDEF12C005E6F85;
@@ -184,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C578931DDEF566005E6F85 /* TrafficCounter.swift in Sources */,
+				854E55D32D68AB5300542361 /* SwiftTimer.swift in Sources */,
 				A04343071DDF3452000C24EB /* TrafficSummary.swift in Sources */,
 				A04343091DDF3490000C24EB /* TrafficStatus.swift in Sources */,
 				A0C578961DDEF566005E6F85 /* TrafficPackage.swift in Sources */,
@@ -335,7 +336,7 @@
 				);
 				INFOPLIST_FILE = TrafficPolice/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.TrafficPolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,7 +363,7 @@
 				);
 				INFOPLIST_FILE = TrafficPolice/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.TrafficPolice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
